@@ -1,0 +1,16 @@
+name: Call a reusable workflow - Greeting
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: choice
+        description: Who to greet
+        options: 
+        - monalisa
+        - cschleiden
+jobs:
+  greeting:
+    uses: kyoroff/action-ci-cd/./github/workflows/_helloWorld.yml@main
+    with:
+      name: ${{ inputs.name }}
