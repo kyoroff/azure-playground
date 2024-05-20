@@ -9,11 +9,8 @@ permissions:
 
 jobs:
   deploy_function:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Run reusable workflow'
-        uses: kyoroff/action-ci-cd/.github/workflows/_functionAppDeploy.yml@main
-        with:
-          python_version: '3.10'
-          dir: 'HttpExample'
-          function_name: 'sc16nskdemoapp0012'
+    uses: kyoroff/action-ci-cd/.github/workflows/_functionAppDeploy.yml@main
+    with:
+      python_version: '3.10'
+      dir: 'HttpExample'
+      function_name: 'sc16nskdemoapp0012'
