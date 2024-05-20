@@ -9,6 +9,7 @@ permissions:
 
 jobs:
   deploy_function:
+    environment: enterprise
     uses: kyoroff/action-ci-cd/.github/workflows/_functionAppDeploy.yml@main
     with:
       python_version: '3.10'
