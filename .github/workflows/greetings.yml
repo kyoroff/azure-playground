@@ -13,6 +13,6 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-      - uses: kyoroff/action-ci-cd/./github/workflows/_helloWorld.yml@main
+      - uses: "kyoroff/action-ci-cd/./github/workflows/_helloWorld.yml@main"
         with:
           name: ${{ inputs.name }}
