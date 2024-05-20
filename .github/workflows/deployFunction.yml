@@ -1,4 +1,3 @@
-
 name: Deploy Function
 
 on:
@@ -15,6 +14,6 @@ jobs:
       - name: 'Run reusable workflow'
         uses: kyoroff/action-ci-cd/.github/workflows/_functionAppDeploy.yml@main
         with:
-          python_version: 3.10
-          dir: HttpExample
-          function_name: sc16nskdemoapp0012
+          python_version: '3.10'
+          dir: 'HttpExample'
+          function_name: 'sc16nskdemoapp0012'
