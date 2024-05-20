@@ -12,5 +12,6 @@ on:
 jobs:
   greeting:
     uses: kyoroff/action-ci-cd/./github/workflows/_helloWorld.yml@main
+    runs-on: ubuntu-latest
     with:
       name: ${{ inputs.name }}
